@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard App</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Flashcard Web Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Flashcard Generator</h1>
+        <h1>Flashcard App</h1>
+
+        <!-- Section for adding new flashcards -->
         <div class="input-section">
-            <input type="text" id="flashcard-input" placeholder="Enter a word or phrase">
-            <button id="generate-button">Create Flashcard</button>
+            <h2>Create a Flashcard</h2>
+            <textarea id="cardContent" placeholder="Enter the content of your flashcard..."></textarea>
+            <button id="addCardBtn">Add Flashcard</button>
         </div>
-        <div id="flashcard-container" class="flashcard-container"></div>
+
+        <!-- Section for viewing flashcards -->
+        <div class="view-section">
+            <h2>View Flashcards</h2>
+            <div id="flashcard" class="flashcard">
+                <p id="cardText">Your flashcards will appear here.</p>
+            </div>
+            <button id="nextCardBtn" class="btn-next">Next Flashcard</button>
+        </div>
     </div>
-    <script src="main.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
