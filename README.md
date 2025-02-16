@@ -1,1 +1,1 @@
-flashcard app 
+flashcard website for memorising notes
